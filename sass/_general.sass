@@ -8,7 +8,7 @@ body
     position: relative
     z-index: 1
 
-// =================================HEADER
+// ======================================================HEADER
 
 .header
     position: relative
@@ -45,12 +45,12 @@ body
         @include fontz(700, 45px, #ffffff, 1.6)
         text-transform: uppercase
 
-// =================================POPUP
+// =========================================================POPUP
 
 .form-wrapper 
     @include hidden
 
-// =================================MAIN-TREND
+// ======================================================MAIN-TREND
 
 .main
     margin-top: 61px
@@ -108,7 +108,7 @@ body
             text-decoration: underline
 
 
-// =================================MAIN
+// ========================================================MAIN
         
 .container-main
     display: flex
@@ -126,8 +126,36 @@ body
         width: 381px
     &-block
         margin-left: 30px
+    &-title
+        @include title
+        a:hover
+            color: $color-gold
+    &-text-part
+        margin-top: 45px
+    &-text-wrap
+        margin-top: 15px
+
+.data
+    display: flex
+    margin-top: 27px
+
+.day
+   @include fontz(400, 12px, #888888, 1) 
+
+.author
+    margin-left: 14px
+    @include fontz(700, 12px, #000000, 1)
+    &:hover
+       text-decoration: underline 
+
+.text
+    @include fontz(400, 15px, $color-text, 1.46) 
         
-            
+// ======================================================ASIDE
+
+.aside
+    width: 270px
+    margin-left: 135px     
     
 
 
