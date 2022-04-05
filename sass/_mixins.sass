@@ -1,0 +1,67 @@
+@mixin fontz($fw, $fs, $c, $lh)
+    font-weight: $fw
+    font-size: $fs
+    color: $c
+    line-height: $lh
+
+@mixin img-bg
+    background:
+        size: cover
+        repeat: no-repeat
+        position: center
+        color: #666666
+
+@mixin mask-after
+    content: ""
+    background-color: #000000
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    opacity: 0.6
+    
+@mixin flexible
+   display: flex
+   justify-content: space-between
+   align-items: center 
+
+@mixin hidden
+    width: 1px
+    height: 1px
+    clip: rect(1px, 1px, 1px, 1px)
+    position: absolute
+
+@mixin visually-hidden
+    position: absolute
+    width: 1px
+    height: 1px
+    margin: -1px
+    padding: 0
+    border: 0
+    clip: rect(0 0 0 0)
+    overflow: hidden
+
+@mixin title
+    font-size: 20px
+    line-height: 1.2
+    font-weight: 700
+    text-transform: uppercase
+    color: $color-text
+    a
+        color: $color-text
+
+@mixin title-line
+    content: ""
+    display: block
+    margin: 0 auto
+    margin-top: 10px
+    margin-bottom: 25px
+    width: 66px
+    height: 3px
+    background-color: #e1d9bd
+    
+
+    
+
+    

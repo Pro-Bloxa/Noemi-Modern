@@ -1,0 +1,139 @@
+body
+    font-family: "Open Sans", Arial, sans-serif
+
+.container
+    max-width: 1200px
+    margin: 0 auto
+    padding: 0 15px 0 15px
+    position: relative
+    z-index: 1
+
+// =================================HEADER
+
+.header
+    position: relative
+    background-image: url("../img/banner-bg.jpg")
+    @include img-bg
+    &::after
+        @include mask-after
+
+.menu
+    @include flexible
+    padding-top: 30px
+    &-burger
+        display: none
+
+.logo
+    width: 180px
+    &-mobile
+        display: none
+
+.items
+    display: flex
+
+.item-link
+    @include fontz(400, 13px, #ffffff, 1)
+    margin-left: 35px
+    text-transform: uppercase
+
+.title-header
+    margin: 0 auto
+    max-width: 690px
+    &-text
+        padding: 100px 0 130px 0
+        text-align: center
+        @include fontz(700, 45px, #ffffff, 1.6)
+        text-transform: uppercase
+
+// =================================POPUP
+
+.form-wrapper 
+    @include hidden
+
+// =================================MAIN-TREND
+
+.main
+    margin-top: 61px
+
+.trend
+    &-title
+        text-align: center
+        @include title
+        &::after
+            @include title-line
+    &-wrapper
+        display: flex
+        min-height: 320px
+    &-block
+        position: relative
+        display: flex
+        width: calc(25% - 3px)
+        @include img-bg
+        &:nth-child(n+2)
+            margin-left: 4px
+        &::after
+            @include mask-after
+        &-1
+            background-image: url("../img/trend1.jpg")
+        &-2
+            background-image: url("../img/trend2.jpg")
+        &-3
+            background-image: url("../img/trend3.jpg")
+        &-4
+            background-image: url("../img/trend4.jpg")
+    &-desc
+        align-self: flex-end
+        flex-grow: 1
+        margin: 14px 18px
+        z-index: 1
+        &-content
+            text-align: left
+            padding: 32px 30px
+            border: 2px solid $color-gold
+    &-subtitle
+        a
+            @include title
+            color: #ffffff
+
+.tags
+    display: flex
+
+.tag
+    &:nth-child(n + 2)
+        margin-left: 15px
+    &-link
+        @include fontz(700, 14px, $color-gold, 2.8)
+        text-transform: uppercase
+        &:hover
+            text-decoration: underline
+
+
+// =================================MAIN
+        
+.container-main
+    display: flex
+    justify-content: space-between
+    margin-top: 64px
+
+// .news-box
+//     flex-grow: 1
+
+.news
+    @include flexible
+    &:nth-child(n + 2)
+        margin-top: 60px
+    &-foto
+        width: 381px
+    &-block
+        margin-left: 30px
+        
+            
+    
+
+
+        
+
+
+    
+        
+        
