@@ -42,6 +42,11 @@
     clip: rect(0 0 0 0)
     overflow: hidden
 
+@mixin appearance
+    -webkit-appearance: none
+    -moz-appearance: none
+    appearance: none
+
 @mixin title
     font-size: 20px
     line-height: 1.2
@@ -60,6 +65,23 @@
     width: 66px
     height: 3px
     background-color: #e1d9bd
+
+@mixin title-aside
+    font-size: 14px
+    line-height: 1.28
+    font-weight: 700
+    text-transform: uppercase
+    color: $color-text
+
+@mixin btn
+    height: 48px
+    width: 100%
+    text-transform: uppercase
+    background-color: $color-gold
+    @include fontz(700, 14px, #ffffff, 1)
+
+
+
     
 
     

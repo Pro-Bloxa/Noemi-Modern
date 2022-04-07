@@ -91,6 +91,7 @@ body
             padding: 32px 30px
             border: 2px solid $color-gold
     &-subtitle
+        margin-top: 12px
         a
             @include title
             color: #ffffff
@@ -102,7 +103,7 @@ body
     &:nth-child(n + 2)
         margin-left: 15px
     &-link
-        @include fontz(700, 14px, $color-gold, 2.8)
+        @include fontz(700, 14px, $color-gold, 1)
         text-transform: uppercase
         &:hover
             text-decoration: underline
@@ -115,11 +116,12 @@ body
     justify-content: space-between
     margin-top: 64px
 
-// .news-box
-//     flex-grow: 1
+.news-box
+    flex-grow: 1
 
 .news
     @include flexible
+    align-items: start
     &:nth-child(n + 2)
         margin-top: 60px
     &-foto
@@ -127,6 +129,7 @@ body
     &-block
         margin-left: 30px
     &-title
+        margin-top: 14px
         @include title
         a:hover
             color: $color-gold
@@ -154,8 +157,83 @@ body
 // ======================================================ASIDE
 
 .aside
+    flex-shrink: 0
     width: 270px
-    margin-left: 135px     
+    margin-left: 135px
+    &-title
+        @include title-aside
+        a
+            color: $color-text
+        &-stressed
+            text-align: center
+            &::after
+                @include title-line
+        &-color
+            margin-top: 7px
+            a:hover
+                color: $color-gold
+    &-post
+        display: flex
+        align-items: start
+        &:nth-child(n + 2)
+            margin-top: 21px
+    &-img
+        width: 70px   
+    &-block
+        margin-left: 17px
+
+.search
+    @include appearance
+    display: inline-block
+    margin-top: 65px
+    font-size: 0
+    &-text
+        width: 222px
+
+.input-text
+    height: 48px
+        padding-left: 18px
+        background-color: $color-gris
+        &::placeholder
+            font-size: 14px
+            font-weight: 400
+        &:focus
+            padding-left: 10px
+            padding-right: 10px
+            border-bottom: 1px solid #ebe7d7
+
+.btn
+    @include btn
+    &:hover
+        background-color: #323232
+    &-search
+        width: 48px
+        vertical-align: top
+        @include img-bg
+        background:
+            color: $color-gold
+            image: url("../svg/search.svg")
+            size: 18px
+    &-subscribe
+        margin-top: 17px
+        
+
+.screen-reader
+   @include visually-hidden
+
+.mailing
+    margin-top: 56px 
+
+.subscribe
+    @include appearance
+    &-text
+        width: 100%
+
+.tags-block
+    margin-top: 57px
+
+
+            
     
 
 
