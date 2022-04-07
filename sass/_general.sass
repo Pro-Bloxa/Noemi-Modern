@@ -53,7 +53,7 @@ body
 // ======================================================MAIN-TREND
 
 .main
-    margin-top: 61px
+    margin-top: 60px
 
 .trend
     &-title
@@ -129,24 +129,24 @@ body
     &-block
         margin-left: 30px
     &-title
-        margin-top: 14px
+        margin-top: 10px
         @include title
         a:hover
             color: $color-gold
     &-text-part
-        margin-top: 45px
+        margin-top: 47px
     &-text-wrap
-        margin-top: 15px
+        margin-top: 12px
 
 .data
     display: flex
-    margin-top: 27px
+    margin-top: 30px
 
 .day
    @include fontz(400, 12px, #888888, 1) 
 
 .author
-    margin-left: 14px
+    margin-left: 13px
     @include fontz(700, 12px, #000000, 1)
     &:hover
        text-decoration: underline 
@@ -236,7 +236,7 @@ body
         flex-wrap: wrap
     &-item
         border: 3px solid #eeeeee
-        margin: 0 5px 6px 0
+        margin: 0 5px 10px 0
         padding: 4px 14px 4px 14px
         font-size: 12px
         font-weight: 700
@@ -251,7 +251,7 @@ body
     &-items
         margin-top: -17px
     &-item
-        padding: 11px 0
+        padding: 14px 0
         width: 100%
         border-bottom: 1px solid #eeeeee
         font-size: 14px
@@ -283,6 +283,7 @@ body
         display: flex
         flex-direction: column
         width: 30%
+        padding-top: 5px
         padding-left: 23px
         padding-right: 23px
         &-img
@@ -293,7 +294,9 @@ body
         outline-offset: 23px
     &-content
         padding-top: 20px
-        @include fontz(400, 15px, $color-text, 1.46) 
+        @include fontz(400, 15px, $color-text, 1.46)
+        .text
+            margin-top: 3px
     &-link
         color: $color-gold
         &:hover
@@ -315,7 +318,7 @@ body
 // ======================================================FOOTER
 
 .footer
-    margin-top: 64px
+    margin-top: 92px
     text-align: center
 
 .socials
@@ -344,11 +347,11 @@ body
             background-image: url("../svg/002-facebook-logo.svg")
         &-instagram
             background-image: url("../svg/005-instagram.svg")
-        &-itumblr
+        &-tumblr
             background-image: url("../svg/003-tumblr.svg")
 
 .copyright
-    padding-top: 65px
+    padding-top: 45px
     padding-bottom: 39px
     font-size: 12px
     font-weight: 700
