@@ -192,15 +192,15 @@ body
 
 .input-text
     height: 48px
-        padding-left: 18px
-        background-color: $color-gris
-        &::placeholder
-            font-size: 14px
-            font-weight: 400
-        &:focus
-            padding-left: 10px
-            padding-right: 10px
-            border-bottom: 1px solid #ebe7d7
+    padding-left: 18px
+    background-color: $color-gris
+    &::placeholder
+        font-size: 14px
+        font-weight: 400
+    &:focus
+        padding-left: 10px
+        padding-right: 10px
+        border-bottom: 1px solid #ebe7d7
 
 .btn
     @include btn
@@ -231,15 +231,131 @@ body
 
 .tags-block
     margin-top: 57px
-
-
-            
-    
-
-
+    &-items
+        display: flex
+        flex-wrap: wrap
+    &-item
+        border: 3px solid #eeeeee
+        margin: 0 5px 6px 0
+        padding: 4px 14px 4px 14px
+        font-size: 12px
+        font-weight: 700
+        text-transform: uppercase
+        &:hover
+            border: 3px solid $color-gold
+    &-link
+        color: $color-text
         
+.themes
+    margin-top: 48px
+    &-items
+        margin-top: -17px
+    &-item
+        padding: 11px 0
+        width: 100%
+        border-bottom: 1px solid #eeeeee
+        font-size: 14px
+        font-weight: 700
+    &-link
+        color: #000000
+        &:hover
+            color: $color-gold
+        &-number
+            vertical-align: super
+            @include fontz(700, 14px, $color-gold, 1) 
+
+// ======================================================CATALOG
+
+.catalog
+    margin-top: 64px
+    &-title
+        text-align: center
+        @include title
+        &::after
+            @include title-line
+    &-subtitle
+        @include title
+    &-wrapper
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+    &-block
+        display: flex
+        flex-direction: column
+        width: 30%
+        padding-left: 23px
+        padding-right: 23px
+        &-img
+            widows: 100%
+    &-desc
+        flex-grow: 1
+        outline: #d3c59d solid 3px
+        outline-offset: 23px
+    &-content
+        padding-top: 20px
+        @include fontz(400, 15px, $color-text, 1.46) 
+    &-link
+        color: $color-gold
+        &:hover
+            text-decoration: underline
+            cursor: pointer
+    &-shopping
+        @include flexible
+        margin-top: 23px
+    &-price
+        font-weight: 700
+        &-stock
+            font-size: 14px
+            text-decoration: line-through
+        &-rub
+            font-size: 20px
+    &-btn
+        width: 140px
+
+// ======================================================FOOTER
+
+.footer
+    margin-top: 64px
+    text-align: center
+
+.socials
+    padding: 31px 0
+    background-color: $color-gris
+    &-item
+        display: inline-block
+    &-link 
+        display: inline-block
+        margin-left: 10px
+        margin-right: 10px
+        height: 24px
+        width: 24px
+        background: 
+            color: $color-gris
+            repeat: no-repeat
+            position: center
+            size: 20px
+        &-text
+            @include hidden
+        &-twitter
+            background-image: url("../svg/004-twitter.svg")
+        &-pinterest
+            background-image: url("../svg/001-pinterest.svg")
+        &-facebook
+            background-image: url("../svg/002-facebook-logo.svg")
+        &-instagram
+            background-image: url("../svg/005-instagram.svg")
+        &-itumblr
+            background-image: url("../svg/003-tumblr.svg")
+
+.copyright
+    padding-top: 65px
+    padding-bottom: 39px
+    font-size: 12px
+    font-weight: 700
+    a
+      color: #999999
+
+.llc 
+    text-transform: uppercase   
 
 
-    
-        
-        
