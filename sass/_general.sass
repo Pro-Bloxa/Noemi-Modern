@@ -49,6 +49,84 @@ body
 
 .form-wrapper 
     @include hidden
+    position: fixed
+    display: flex
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    background-color: rgba(0, 0, 0, 0.5)
+    z-index: 10
+
+.popup
+    position: relative
+    display: block
+    max-width: 391px
+    padding: 30px 25px 30px 25px
+    flex-grow: 1
+    margin: auto
+    background-color: #ffffff
+    &-cross
+        position: absolute
+        width: 19px
+        top: -26px
+        right: 0
+    &-title
+        text-align: center
+        @include title
+        &::after
+            @include title-line
+    &-choose
+        display: block
+        padding-left: 20px
+        margin-top: 9px
+        width: 100%
+        height: 47px
+        @include appearance
+        background-color: #ececec
+        @include fontz(400, 15px, #828483, 1)
+        background-image: url(../svg/form-arrows.svg)
+        background-repeat: no-repeat
+        background-size: 8px
+        background-position: right 14px center
+    &-mail
+        margin-top: 34px
+        &-choose
+            margin-top: 10px
+        &-no
+            margin-left: 15px
+    &-no-yes
+        &::before
+            @include before-after
+            width: 18px
+            height: 18px
+            background-image: url("../svg/form-empty-circle.svg")
+            background-size: 18px
+            margin-right: 5px
+    &-check
+        @include hidden
+    &-text
+        display: block
+        margin-top: 34px
+    &-field
+        min-width: 100%
+        max-width: 100%
+        min-height: 130px
+        max-height: 130px
+        padding: 20px
+        margin-top: 10px
+        margin-bottom: 26px
+        @include appearance
+        background-color: #ececec
+        &::placeholder
+            font-size: 15px
+        
+.popup-check:checked ~ .popup-no-yes::before
+    background-image: url("../svg/form-circle.svg")
+
+
+
+
 
 // ======================================================MAIN-TREND
 
